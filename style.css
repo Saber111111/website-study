@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #000;
+}
+
+.header {
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.header-menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+.submenu-wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    top: 60px;
+}   
+
+.submenu-child {
+    list-style: none;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.submenu-child li{
+    top: 20px;
+}
+
+.submenu-child li li{
+    list-style: none;
+    left: -50px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+.submenu-child li li a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.submenu-child li li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.header-menu li:hover .submenu-wrapper {
+    display: block;
+}
+
+.header-card {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: o;
+}
+
+.header-card li {
+    margin-left: 20px;
+}
+
+.header-card img {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header-card img:hover {
+    transform: scale(1.1);
+}
+
